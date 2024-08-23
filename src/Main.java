@@ -3,19 +3,9 @@ import aula02.Caneta;
 public class Main {
     public static void main(String[] args) {
 
-        Caneta azul = new Caneta();
-        azul.setModelo("Bic Cristal");
-        azul.setCor("Azul");
-        azul.setPonta(0.5f);
-        azul.setCarga(90);
-        azul.setTampada(true);
+        Caneta azul = new Caneta("Bic Cristal","Azul",0.5f,90,true);
 
-        Caneta preta = new Caneta();
-        preta.setModelo("Pilot");
-        preta.setCor("Preta");
-        preta.setPonta(0.8f);
-        preta.setCarga(30);
-        preta.setTampada(false);
+        Caneta preta = new Caneta("Pilot","Preta",0.8f,30,false);
 
         azul.status();
         azul.destampar();
