@@ -86,8 +86,7 @@ public class Luta {
                 System.out.println(desafiado.getNome().toUpperCase());
                 desafiado.status();
                 break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + resultado);
+            default: System.out.println("Resultado inválido");
         }
         } else {
             System.out.println("Luta não pode acontecer.");

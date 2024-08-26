@@ -1,7 +1,7 @@
 package aula05.conta;
 
 public class ContaBanco {
-//    Atributos
+    //    Atributos
     public int numConta;
     protected String tipo;
     private String dono;
@@ -101,7 +101,7 @@ public class ContaBanco {
                 System.out.println("Saldo insuficiente para sacar " + valor);
             }
         } else {
-                System.out.println("Impossível sacar em conta desativada");
+            System.out.println("Impossível sacar em conta desativada");
         }
     }
     public void pagarMensalidade(String tipo){
