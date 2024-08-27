@@ -10,6 +10,15 @@ public class Funcionario extends Pessoa{
 		this.setTrabalhando( trabalhando );
 	}
 
+	public void status(){
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("Setor: " + this.getSetor());
+		System.out.println("Está trabalhando? " + this.isTrabalhando());
+		System.out.println("-------------------------");
+	}
+
 	public String getSetor( ) {
 		return setor;
 	}
@@ -26,7 +35,7 @@ public class Funcionario extends Pessoa{
 		this.trabalhando = trabalhando;
 	}
 
-	public void mudarTrabalho( String novoTrabalho ) {
-		this.setSetor( novoTrabalho );
+	public void mudarTrabalho( ) {
+		this.trabalhando = ! this.trabalhando;
 	}
 }

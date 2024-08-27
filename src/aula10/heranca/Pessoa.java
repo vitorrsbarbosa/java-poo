@@ -11,6 +11,22 @@ public class Pessoa {
 		this.setSexo( sexo );
 	}
 
+	public void status(){
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("-------------------------");
+	}
+
+	@Override
+	public String toString( ) {
+		return "Pessoa{" +
+				"nome='" + nome + '\'' +
+				", idade=" + idade +
+				", sexo='" + sexo + '\'' +
+				'}';
+	}
+
 	public String getNome( ) {
 		return nome;
 	}
@@ -37,10 +53,5 @@ public class Pessoa {
 
 	public void fazerAniversario() {
 		this.setIdade( this.getIdade() + 1 );
-	}
-	public void status(){
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("Idade: " + this.getIdade());
-		System.out.println("Sexo: " + this.getSexo());
 	}
 }

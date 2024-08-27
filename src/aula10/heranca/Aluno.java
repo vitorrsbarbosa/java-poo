@@ -10,6 +10,15 @@ public class Aluno extends Pessoa{
 		this.setCurso( curso );
 	}
 
+	public void status(){
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("Matrícula: " + this.getMatricula());
+		System.out.println("Curso: " + this.getCurso());
+		System.out.println("-------------------------");
+	}
+
 	public int getMatricula( ) {
 		return matricula;
 	}

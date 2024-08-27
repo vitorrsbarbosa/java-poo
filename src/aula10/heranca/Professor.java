@@ -10,6 +10,15 @@ public class Professor extends Pessoa{
 		this.setSalario( salario );
 	}
 
+	public void status(){
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("Especialidade: " + this.getEspecialidade());
+		System.out.println("Salario: " + this.getSalario());
+		System.out.println("-------------------------");
+	}
+
 	public String getEspecialidade( ) {
 		return especialidade;
 	}
@@ -30,11 +39,4 @@ public class Professor extends Pessoa{
 		this.setSalario( this.getSalario() + aumento );
 	}
 
-	public void status(){
-		System.out.println("Nome: " + this.getNome());
-		System.out.println("Idade: " + this.getIdade());
-		System.out.println("Sexo: " + this.getSexo());
-		System.out.println("Especialidade: " + this.getEspecialidade());
-		System.out.println("Salario: " + this.getSalario());
-	}
 }

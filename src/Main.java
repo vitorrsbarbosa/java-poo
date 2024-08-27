@@ -109,7 +109,15 @@ public class Main {
         Funcionario p4 = new Funcionario("Alayde",61,"F","Saúde",true);
 
         p2.receberAumento(600f);
-        p3.cancelarMatricula();
-        p4.mudarTrabalho("Coordenadora de curso");
+
+        p1.status();
+        p2.status();
+        p3.status();
+        p4.status();
+
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
     }
 }
