@@ -166,5 +166,13 @@ public class Main {
         beta.emitirSom( );
         cobra.emitirSom( );
         tartaruga.emitirSom( );
+
+        cachorro.reagir( "Olá" );
+        cachorro.reagir( "bom dia" );
+        cachorro.reagir( 9, 30 );
+        cachorro.reagir( 13, 25 );
+        cachorro.reagir( 20, 20 );
+        cachorro.reagir( true );
+        cachorro.reagir( false );
     }
 }
