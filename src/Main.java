@@ -1,4 +1,9 @@
-import aula10.heranca.*;
+import aula12.polimorfismo.ave.Arara;
+import aula12.polimorfismo.mamifero.Cachorro;
+import aula12.polimorfismo.mamifero.Canguru;
+import aula12.polimorfismo.peixe.Beta;
+import aula12.polimorfismo.reptil.Cobra;
+import aula12.polimorfismo.reptil.Tartaruga;
 
 public class Main {
     public static void main(String[] args) {
@@ -100,41 +105,55 @@ public class Main {
 //        livros[0].folhear(100);
 //        livros[0].avancarPagina();
 
-        Funcionario p1 = new Funcionario( "Vitor",30,"M","Informática",true );
-        Professor p2 = new Professor( "Dayany",32,"F", "Arquitetura",3600f);
-        Aluno p3 = new Aluno( "Arthur",13,"M",111,"Ensino Fundamental" );
-        Funcionario p4 = new Funcionario("Alayde",61,"F","Saúde",true);
-        Visitante p5 = new Visitante("Belchior",70,"M");
-        Bolsista p6 = new Bolsista("João",18,"M",112,"Medicina",true,2500f);
-        Tecnico p7 = new Tecnico("Janaina",25,"F",113,"Veterinária");
+//        Funcionario p1 = new Funcionario( "Vitor",30,"M","Informática",true );
+//        Professor p2 = new Professor( "Dayany",32,"F", "Arquitetura",3600f);
+//        Aluno p3 = new Aluno( "Arthur",13,"M",111,"Ensino Fundamental" );
+//        Funcionario p4 = new Funcionario("Alayde",61,"F","Saúde",true);
+//        Visitante p5 = new Visitante("Belchior",70,"M");
+//        Bolsista p6 = new Bolsista("João",18,"M",112,"Medicina",true,2500f);
+//        Tecnico p7 = new Tecnico("Janaina",25,"F",113,"Veterinária");
 
-        p1.mudarTrabalho();
-        p2.receberAumento(600f);
-        p3.pagarMensalidade();
-        p6.pagarMensalidade();
-        p7.pagarMensalidade();
-        p4.mudarTrabalho();
-        p5.fazerAniversario();
-        p6.renovarBolsa();
-        p7.fazerAniversario();
+//        p1.mudarTrabalho();
+//        p2.receberAumento(600f);
+//        p3.pagarMensalidade();
+//        p6.pagarMensalidade();
+//        p7.pagarMensalidade();
+//        p4.mudarTrabalho();
+//        p5.fazerAniversario();
+//        p6.renovarBolsa();
+//        p7.fazerAniversario();
 
 
-        System.out.println("-------------------------");
+//        System.out.println("-------------------------");
 
-        p1.status();
-        p2.status();
-        p3.status();
-        p4.status();
-        p5.status();
-        p6.status();
-        p7.status();
+//        p1.status();
+//        p2.status();
+//        p3.status();
+//        p4.status();
+//        p5.status();
+//        p6.status();
+//        p7.status();
 
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-        System.out.println(p4.toString());
-        System.out.println(p5.toString());
-        System.out.println(p6.toString());
-        System.out.println(p7.toString());
+//        System.out.println(p1.toString());
+//        System.out.println(p2.toString());
+//        System.out.println(p3.toString());
+//        System.out.println(p4.toString());
+//        System.out.println(p5.toString());
+//        System.out.println(p6.toString());
+//        System.out.println(p7.toString());
+
+        Canguru canguru = new Canguru( 120f, 15, 4, "Marrom claro" );
+        Cachorro cachorro = new Cachorro( 45f, 5, 4, "Preto e branco" );
+        Arara arara = new Arara( 15f, 50, 2, "Amarelo" );
+        Beta beta = new Beta( 0.25f, 0, 0, "Dourado" );
+        Cobra cobra = new Cobra( 10f, 3, 0, "Verde" );
+        Tartaruga tartaruga = new Tartaruga( 150f, 150, 4, "Verde" );
+
+        canguru.locomover( );
+        cachorro.locomover( );
+        arara.locomover( );
+        beta.locomover( );
+        cobra.locomover( );
+        tartaruga.locomover( );
     }
 }
