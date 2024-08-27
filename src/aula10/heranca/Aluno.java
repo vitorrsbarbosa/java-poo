@@ -1,6 +1,9 @@
 package aula10.heranca;
 
 public class Aluno extends Pessoa{
+//	Herança para implementação
+//	Faz alterações/adições que a classe progenitora não tem
+
 	private int matricula;
 	private String curso;
 
@@ -35,7 +38,12 @@ public class Aluno extends Pessoa{
 		this.curso = curso;
 	}
 
+	public void pagarMensalidade(){
+		System.out.println("Pagando mensalidade do aluno " + this.getNome());
+	}
+
 	public void cancelarMatricula() {
+		System.out.println("Matrícula cancelada com sucesso, foi bom te ter por aqui");
 		this.setMatricula( 0 );
 		this.setCurso( null );
 	}

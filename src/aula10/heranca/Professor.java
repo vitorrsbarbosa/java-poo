@@ -36,7 +36,9 @@ public class Professor extends Pessoa{
 	}
 
 	public void receberAumento(float aumento) {
+		float salarioAntigo = this.getSalario();
 		this.setSalario( this.getSalario() + aumento );
+		System.out.println("Parabéns pelo aumento no salário de " + salarioAntigo + "R$ para " + this.getSalario() + "R$");
 	}
 
 }

@@ -36,6 +36,7 @@ public class Funcionario extends Pessoa{
 	}
 
 	public void mudarTrabalho( ) {
+		System.out.println("Alteração de estado realizada");
 		this.trabalhando = ! this.trabalhando;
 	}
 }

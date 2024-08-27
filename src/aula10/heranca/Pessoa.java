@@ -1,6 +1,6 @@
 package aula10.heranca;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
 	private int idade;
 	private String sexo;
@@ -52,6 +52,7 @@ public class Pessoa {
 	}
 
 	public void fazerAniversario() {
+		System.out.println("FELIZ ANIVERSÁRIO " + this.getNome().toUpperCase());
 		this.setIdade( this.getIdade() + 1 );
 	}
 }
