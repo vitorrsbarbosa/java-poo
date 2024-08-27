@@ -20,7 +20,7 @@ public abstract class Reptil extends Animal {
 
 	@Override
 	public void locomover( ) {
-		System.out.println( "O réptil rasteja" );
+		System.out.println( "Rastejar" );
 	}
 
 	@Override

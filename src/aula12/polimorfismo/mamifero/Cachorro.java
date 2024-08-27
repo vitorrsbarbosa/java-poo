@@ -7,7 +7,12 @@ public class Cachorro extends Mamifero {
 
 	@Override
 	public void locomover( ) {
-		System.out.println( "O Cachorro corre" );
+		System.out.println( "Correr em quatro patas" );
+	}
+
+	@Override
+	public void emitirSom( ) {
+		System.out.println( "Latir" );
 	}
 
 	public void enterrarOsso( ) {

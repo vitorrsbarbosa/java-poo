@@ -9,6 +9,6 @@ public class Canguru extends Mamifero {
 	}
 
 	public void locomover( ) {
-		System.out.println( "O canguru pula" );
+		System.out.println( "Pular" );
 	}
 }

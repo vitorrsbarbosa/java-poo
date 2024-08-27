@@ -6,6 +6,6 @@ public class Tartaruga extends Reptil {
 	}
 
 	public void locomover( ) {
-		System.out.println( "A tartaruga anda muito devagar" );
+		System.out.println( "Andar muito devagar" );
 	}
 }

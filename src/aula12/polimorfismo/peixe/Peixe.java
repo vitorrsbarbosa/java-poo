@@ -20,7 +20,7 @@ public abstract class Peixe extends Animal {
 
 	@Override
 	public void locomover( ) {
-		System.out.println( "O Peixe nada" );
+		System.out.println( "Nadar" );
 	}
 
 	@Override

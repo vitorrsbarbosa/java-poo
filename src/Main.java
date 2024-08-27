@@ -1,6 +1,7 @@
 import aula12.polimorfismo.ave.Arara;
 import aula12.polimorfismo.mamifero.Cachorro;
 import aula12.polimorfismo.mamifero.Canguru;
+import aula12.polimorfismo.mamifero.Lobo;
 import aula12.polimorfismo.peixe.Beta;
 import aula12.polimorfismo.reptil.Cobra;
 import aula12.polimorfismo.reptil.Tartaruga;
@@ -144,6 +145,7 @@ public class Main {
 
         Canguru canguru = new Canguru( 120f, 15, 4, "Marrom claro" );
         Cachorro cachorro = new Cachorro( 45f, 5, 4, "Preto e branco" );
+        Lobo lobo = new Lobo( 45f, 10, 4, "Preto" );
         Arara arara = new Arara( 15f, 50, 2, "Amarelo" );
         Beta beta = new Beta( 0.25f, 0, 0, "Dourado" );
         Cobra cobra = new Cobra( 10f, 3, 0, "Verde" );
@@ -151,9 +153,18 @@ public class Main {
 
         canguru.locomover( );
         cachorro.locomover( );
+        lobo.locomover( );
         arara.locomover( );
         beta.locomover( );
         cobra.locomover( );
         tartaruga.locomover( );
+
+        canguru.emitirSom( );
+        cachorro.emitirSom( );
+        lobo.emitirSom( );
+        arara.emitirSom( );
+        beta.emitirSom( );
+        cobra.emitirSom( );
+        tartaruga.emitirSom( );
     }
 }

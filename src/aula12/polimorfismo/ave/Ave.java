@@ -20,7 +20,7 @@ public abstract class Ave extends Animal {
 
 	@Override
 	public void locomover( ) {
-		System.out.println( "A Arara voa" );
+		System.out.println( "Voar" );
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public abstract class Ave extends Animal {
 
 	@Override
 	public void emitirSom( ) {
-		System.out.println( "Som de ave" );
+		System.out.println( "Fazer som de ave" );
 	}
 
 	public void fazerNinho( ) {
