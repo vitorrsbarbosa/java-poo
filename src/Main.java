@@ -1,11 +1,3 @@
-import aula12.polimorfismo.ave.Arara;
-import aula12.polimorfismo.mamifero.Cachorro;
-import aula12.polimorfismo.mamifero.Canguru;
-import aula12.polimorfismo.mamifero.Lobo;
-import aula12.polimorfismo.peixe.Beta;
-import aula12.polimorfismo.reptil.Cobra;
-import aula12.polimorfismo.reptil.Tartaruga;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -143,36 +135,63 @@ public class Main {
 //        System.out.println(p6.toString());
 //        System.out.println(p7.toString());
 
-        Canguru canguru = new Canguru( 120f, 15, 4, "Marrom claro" );
-        Cachorro cachorro = new Cachorro( 45f, 5, 4, "Preto e branco" );
-        Lobo lobo = new Lobo( 45f, 10, 4, "Preto" );
-        Arara arara = new Arara( 15f, 50, 2, "Amarelo" );
-        Beta beta = new Beta( 0.25f, 0, 0, "Dourado" );
-        Cobra cobra = new Cobra( 10f, 3, 0, "Verde" );
-        Tartaruga tartaruga = new Tartaruga( 150f, 150, 4, "Verde" );
+//        Canguru canguru = new Canguru( 120f, 15, 4, "Marrom claro" );
+//        Cachorro cachorro = new Cachorro( 45f, 5, 4, "Preto e branco" );
+//        Lobo lobo = new Lobo( 45f, 10, 4, "Preto" );
+//        Arara arara = new Arara( 15f, 50, 2, "Amarelo" );
+//        Beta beta = new Beta( 0.25f, 0, 0, "Dourado" );
+//        Cobra cobra = new Cobra( 10f, 3, 0, "Verde" );
+//        Tartaruga tartaruga = new Tartaruga( 150f, 150, 4, "Verde" );
 
-        canguru.locomover( );
-        cachorro.locomover( );
-        lobo.locomover( );
-        arara.locomover( );
-        beta.locomover( );
-        cobra.locomover( );
-        tartaruga.locomover( );
+//        canguru.locomover( );
+//        cachorro.locomover( );
+//        lobo.locomover( );
+//        arara.locomover( );
+//        beta.locomover( );
+//        cobra.locomover( );
+//        tartaruga.locomover( );
 
-        canguru.emitirSom( );
-        cachorro.emitirSom( );
-        lobo.emitirSom( );
-        arara.emitirSom( );
-        beta.emitirSom( );
-        cobra.emitirSom( );
-        tartaruga.emitirSom( );
+//        canguru.emitirSom( );
+//        cachorro.emitirSom( );
+//        lobo.emitirSom( );
+//        arara.emitirSom( );
+//        beta.emitirSom( );
+//        cobra.emitirSom( );
+//        tartaruga.emitirSom( );
 
-        cachorro.reagir( "Olá" );
-        cachorro.reagir( "bom dia" );
-        cachorro.reagir( 9, 30 );
-        cachorro.reagir( 13, 25 );
-        cachorro.reagir( 20, 20 );
-        cachorro.reagir( true );
-        cachorro.reagir( false );
+//        cachorro.reagir( "Olá" );
+//        cachorro.reagir( "bom dia" );
+//        cachorro.reagir( 9, 30 );
+//        cachorro.reagir( 13, 25 );
+//        cachorro.reagir( 20, 20 );
+//        cachorro.reagir( true );
+//        cachorro.reagir( false );
+
+//        Gafanhoto g[] = new Gafanhoto[2];
+//        g[0] = new Gafanhoto( "Vitor",30,"M","vvv" );
+//        g[1] = new Gafanhoto( "Dayany",32,"F","dayyy" );
+
+//        Video v[] = new Video[5];
+//        v[0] = new Video( "O que eu to fazendo aqui?" );
+//        v[1] = new Video( "Estuando Java + POO" );
+//        v[2] = new Video( "SEROMA" );
+
+//        Visualizacao[] visualizacao = new Visualizacao[3];
+//        visualizacao[0] = new Visualizacao( g[0],v[0] );
+//        visualizacao[0] = new Visualizacao( g[0],v[1] );
+//        visualizacao[1] = new Visualizacao( g[1],v[0] );
+//        visualizacao[1] = new Visualizacao( g[1],v[2] );
+//        visualizacao[2] = new Visualizacao( g[0],v[2] );
+
+//        System.out.println( g[0].toString() );
+//        System.out.println( g[1].toString() );
+//        System.out.println( "-----------------------------------------" );
+//        System.out.println( v[0].toString() );
+//        System.out.println( v[1].toString() );
+//        System.out.println( v[2].toString() );
+//        System.out.println( "-----------------------------------------" );
+//        System.out.println( visualizacao[0] );
+//        System.out.println( visualizacao[1] );
+//        System.out.println( visualizacao[2] );
     }
 }
